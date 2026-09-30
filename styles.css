@@ -531,13 +531,20 @@ section {
   .site-header .container {
     flex-wrap: wrap;
     row-gap: 0;
-    padding-top: 10px;
-    padding-bottom: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
 
   .brand {
     flex: 1 1 0;
     min-width: 0;
+    min-height: 40px;
+    gap: 8px;
+  }
+
+  .brand-word {
+    font-size: 1rem;
+    line-height: 1.15;
   }
 
   .header-call {
@@ -569,12 +576,29 @@ section {
   margin-left: 8px;
 }
 
+.service-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card .body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
 .service-card .btn {
-  margin-top: 16px;
+  margin-top: auto;
   min-height: 44px;
-  padding: 0 18px;
+  padding: 0 14px;
   font-size: 0.95rem;
   text-align: center;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.service-card p {
+  margin-bottom: 16px;
 }
 
 /* General contractors band (home) */
